@@ -50,7 +50,8 @@ input[type="submit"]:hover {
     </style>
 </head>
 <body>
-<h1>Meta dos hptas numeros y deje de joder</h1>
+<h1>Ponga 2 numeros</h1>
+<h5>Dato: el primer numero siempre sera el dividendo y el segundo el divisor.</h5>
     <form action="" method="post">
         <input type="text" name="numero1" placeholder="Número 1" required>
         <input type="text" name="numero2" placeholder="Número 2" required>
@@ -64,6 +65,9 @@ input[type="submit"]:hover {
     </form>
     <h1>Resultado</h1>
     <?php
+    /**
+     * *La funcion isset, se utiliza para verificar si una variable esta definida y si tiene un valor asignado
+     */
     if (isset($_POST['numero1']) && isset($_POST['numero2']) && isset($_POST['operador'])) {
         $numero1 = $_POST['numero1'];
         $numero2 = $_POST['numero2'];
