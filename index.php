@@ -51,7 +51,9 @@ input[type="submit"]:hover {
 </head>
 <body>
 <h1>Ponga 2 numeros</h1>
-<h5>Dato: el primer numero siempre sera el dividendo y el segundo el divisor.</h5>
+<h5>Dato: el primer numero siempre sera el dividendo y el segundo el divisor. <br>
+Para el caso de raiz, poner en el primer numero el numero a operar y en el segundo poner un 0.
+</h5>
     <form action="" method="post">
         <input type="text" name="numero1" placeholder="Número 1" required>
         <input type="text" name="numero2" placeholder="Número 2" required>
@@ -60,6 +62,8 @@ input[type="submit"]:hover {
             <option value="restar">Restar</option>
             <option value="multiplicar">Multiplicar</option>
             <option value="dividir">Dividir</option>
+            <option value="potencia">Potencia</option>
+            <option value="raiz">Raiz</option>
         </select>
         <input type="submit" value="Calcular">
     </form>
@@ -91,6 +95,12 @@ input[type="submit"]:hover {
                     echo "Error: No se puede dividir entre cero.";
                     exit;
                 }
+                break;
+            case 'potencia':
+                $resultado = pow($numero1, $numero2);
+                break;
+            case 'raiz':
+                $resultado = sqrt($numero1);
                 break;
             default:
                 echo "Error: Operador inválido.";
