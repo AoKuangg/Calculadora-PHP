@@ -48,6 +48,17 @@
       color: #fff;
       cursor: pointer;
     }
+    input[type="reset"] {
+      width: 50px;
+      height: 50px;
+      font-size: 18px;
+      margin: 5px;
+      border: none;
+      border-radius: 50%;
+      background-color: #4caf50;
+      color: #fff;
+      cursor: pointer;
+    }
 
     input[type="submit"]:hover {
       background-color: #45a049;
@@ -80,6 +91,7 @@
       <input type="submit" name="button" value="+">
       <input type="submit" name="button" value="=">
       <br>
+      <input type="reset" name="button" value="C">
     </form>
 
     <?php
