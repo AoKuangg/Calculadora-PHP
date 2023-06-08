@@ -1,4 +1,4 @@
-### Calculadora HTML y PHP
+# Calculadora HTML y PHP
 
 Esta es una calculadora básica desarrollada utilizando HTML y PHP. Permite realizar operaciones aritméticas simples como suma, resta, multiplicación y división.
 ## Características
